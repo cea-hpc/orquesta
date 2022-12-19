@@ -71,8 +71,8 @@ WORKFLOW_STATE_MACHINE_DATA = {
         events.WORKFLOW_CANCELED_WORKFLOW_DORMANT: statuses.CANCELED,
         events.WORKFLOW_FAILED: statuses.FAILED,
         events.WORKFLOW_SUCCEEDED: statuses.SUCCEEDED,
-        events.TASK_PENDING_WORKFLOW_ACTIVE: statuses.PAUSING,
-        events.TASK_PENDING_WORKFLOW_DORMANT: statuses.PAUSED,
+        # events.TASK_PENDING_WORKFLOW_ACTIVE: statuses.PAUSING,
+        # events.TASK_PENDING_WORKFLOW_DORMANT: statuses.PAUSED,
         # Workflow status is not affected by task going into pause statuses. This allows for more
         # granular control if operators want to pause a task but keep the rest of running.
         events.TASK_PAUSING: statuses.RUNNING,
